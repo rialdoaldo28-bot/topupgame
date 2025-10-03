@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>valdotopup - Top Up Game (Simulasi)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="diamond-container"></div>
+  <header>
+    <h1 id="siteTitle">valdotopup - Top Up Game (Simulasi)</h1>
+    <p class="subtitle">Pilih game favoritmu, isi ID, dan coba simulasi top up!</p>
+  </header>
+
+  <main>
+    <!-- Pilih Game -->
+    <section class="card">
+      <h2>Pilih Game</h2>
+      <div class="game-list">
+        <div class="game" data-game="Mobile Legends">
+          <img src="Mobile Legends_ Bang Bang.jpeg" alt="Mobile Legends">
+          <p>Mobile Legends</p>
+        </div>
+        <div class="game" data-game="Free Fire">
+          <img src="download.jpeg" alt="Free Fire">
+          <p>Free Fire</p>
+        </div>
+        <div class="game" data-game="Genshin Impact">
+          <img src="Genshin Impact app icon.jpeg" alt="Genshin Impact">
+          <p>Genshin Impact</p>
+        </div>
+        <div class="game" data-game="Roblox">
+          <img src="roblox.jpeg" alt="Roblox">
+          <p>Roblox</p>
+          </div>
+      </div>
+    </section>
+
+    <!-- Input ID -->
+    <section class="card">
+      <h2>Masukkan ID Game Anda</h2>
+      <input type="text" id="playerId" placeholder="Contoh: 123456789">
+    </section>
+
+    <!-- Nominal -->
+    <section class="card">
+      <h2>Pilih Nominal</h2>
+      <select id="nominal">
+        <option value="">-- Pilih --</option>
+        <option value="140 Diamonds - Rp20.000">140 Diamonds - Rp20.000</option>
+        <option value="355 Diamonds - Rp50.000">355 Diamonds - Rp50.000</option>
+        <option value="720 Diamonds - Rp100.000">720 Diamonds - Rp100.000</option>
+      </select>
+    </section>
+
+    <!-- Pembayaran -->
+    <section class="card">
+      <h2>Pilih Metode Pembayaran</h2>
+      <select id="payment">
+        <option value="">-- Pilih --</option>
+        <option value="Dana">Dana</option>
+        <option value="OVO">OVO</option>
+        <option value="Gopay">Gopay</option>
+        <option value="QRIS">QRIS</option>
+      </select>
+    </section>
+
+    <button id="orderBtn" class="primary">Proses Top Up</button>
+
+    <!-- Hasil -->
+    <section id="result" class="card hidden">
+      <h2>Detail Pesanan</h2>
+      <p id="resultText"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 valdotopup - Hanya simulasi belajar coding</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
